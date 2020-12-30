@@ -79,98 +79,100 @@ body {
   }
 
   &-bottom {
-    width: 38vmin;
-    height: 26vmin;
-    background: $shark-white-color;
-    top: 27vmin;
-    border-radius: 100%;
-    overflow: hidden;
+    &-1 {
+      width: 38vmin;
+      height: 26vmin;
+      background: $shark-white-color;
+      top: 27vmin;
+      border-radius: 100%;
+      overflow: hidden;
 
-    .mouth {
-      &-1 {
-        z-index: 2;
-        width: 29vmin;
-        height: 16vmin;
-        background: $mouth-color;
-        top: -13vmin;
-        left: -0.5vmin;
-        border-radius: 100%;
-        overflow: hidden;
+      .mouth {
+        &-1 {
+          z-index: 2;
+          width: 29vmin;
+          height: 16vmin;
+          background: $mouth-color;
+          top: -13vmin;
+          left: -0.5vmin;
+          border-radius: 100%;
+          overflow: hidden;
 
-        &::before {
-          width: 28vmin;
-          height: 7vmin;
-          background: $mouth-dark-color;
-          top: 10.7vmin;
-          left: 0.6vmin;
+          &::before {
+            width: 28vmin;
+            height: 7vmin;
+            background: $mouth-dark-color;
+            top: 10.7vmin;
+            left: 0.6vmin;
+            border-radius: 50%;
+          }
+
+          .teeth {
+            width: 3vmin;
+            height: 3.2vmin;
+            background: $teeth-color;
+            top: 8.5vmin;
+            left: -24.3vmin;
+            transform: rotate(-60deg);
+            border-radius: 0% 100% 100% 0% / 30% 50% 50% 70%;
+
+            &-2 {
+              top: 11.4vmin;
+              left: -19.5vmin;
+            }
+
+            &-3 {
+              top: 13.2vmin;
+              left: -14.3vmin;
+            }
+          }
+        }
+
+        &-2 {
+          z-index: 3;
+          width: 38vmin;
+          height: 10vmin;
+          background: $shark-white-color;
+          top: -21.6vmin;
           border-radius: 50%;
         }
 
-        .teeth {
+        &-3 {
+          z-index: 3;
           width: 3vmin;
-          height: 3.2vmin;
-          background: $teeth-color;
-          top: 8.5vmin;
-          left: -24.3vmin;
-          transform: rotate(-60deg);
-          border-radius: 0% 100% 100% 0% / 30% 50% 50% 70%;
+          height: 2vmin;
+          background: $shark-white-color;
+          top: -14vmin;
+          left: 25.5vmin;
 
-          &-2 {
-            top: 11.4vmin;
-            left: -19.5vmin;
-          }
-
-          &-3 {
-            top: 13.2vmin;
-            left: -14.3vmin;
+          &::before {
+            width: 3vmin;
+            height: 1.1vmin;
+            background: $mouth-color;
+            top: 1.1vmin;
+            left: -0.1vmin;
+            transform: rotate(-6deg);
+            border-radius: 0.2vmin 1.5vmin 0 0;
           }
         }
-      }
 
-      &-2 {
-        z-index: 3;
-        width: 38vmin;
-        height: 10vmin;
-        background: $shark-white-color;
-        top: -21.6vmin;
-        border-radius: 50%;
-      }
-
-      &-3 {
-        z-index: 3;
-        width: 3vmin;
-        height: 2vmin;
-        background: $shark-white-color;
-        top: -14vmin;
-        left: 25.5vmin;
-
-        &::before {
+        &-4 {
+          z-index: 3;
           width: 3vmin;
-          height: 1.1vmin;
-          background: $mouth-color;
-          top: 1.1vmin;
-          left: -0.1vmin;
-          transform: rotate(-6deg);
-          border-radius: 0.2vmin 1.5vmin 0 0;
-        }
-      }
+          height: 2vmin;
+          background: $shark-white-color;
+          top: -14vmin;
+          left: -26.5vmin;
 
-      &-4 {
-        z-index: 3;
-        width: 3vmin;
-        height: 2vmin;
-        background: $shark-white-color;
-        top: -14vmin;
-        left: -26.5vmin;
-
-        &::before {
-          width: 3.1vmin;
-          height: 1.3vmin;
-          background: $mouth-color;
-          top: 1vmin;
-          left: 0.1vmin;
-          transform: rotate(6deg);
-          border-radius: 1.5vmin 0.2vmin 0 0;
+          &::before {
+            width: 3.1vmin;
+            height: 1.3vmin;
+            background: $mouth-color;
+            top: 1vmin;
+            left: 0.1vmin;
+            transform: rotate(6deg);
+            border-radius: 1.5vmin 0.2vmin 0 0;
+          }
         }
       }
     }
