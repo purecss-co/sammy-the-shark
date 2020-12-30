@@ -114,7 +114,7 @@ body {
             top: 8.5vmin;
             left: -24.3vmin;
             transform: rotate(-60deg);
-            border-radius: 0% 100% 100% 0% / 30% 50% 50% 70%;
+            border-radius: 0 100% 100% 0 / 30% 50% 50% 70%;
 
             &-2 {
               top: 11.4vmin;
@@ -270,7 +270,7 @@ body {
         width: 12vmin;
         height: 6vmin;
         background: $bg-color;
-        top: -12vmin;
+        top: -11.8vmin;
         left: 10vmin;
 
         &::before {
